@@ -38,7 +38,7 @@ class InstitucionController {
             return
         }
 
-        [institucionInstance: institucionInstance]
+        [institucionInstance: institucionInstance, productoInstanceList:institucionInstance.productos]
     }
 
     def edit() {

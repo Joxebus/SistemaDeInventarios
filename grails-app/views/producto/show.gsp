@@ -34,7 +34,7 @@
 
                 <span class="property-value" aria-labelledby="categoria-label"><g:link controller="categoria"
                                                                                        action="show"
-                                                                                       id="${productoInstance?.categoria}">${productoInstance?.categoria?.encodeAsHTML()}</g:link></span>
+                                                                                       id="${productoInstance?.categoria?.id}">${productoInstance?.categoria?.encodeAsHTML()}</g:link></span>
 
             </li>
         </g:if>
@@ -66,7 +66,7 @@
 
                 <span class="property-value" aria-labelledby="institucion-label"><g:link controller="institucion"
                                                                                          action="show"
-                                                                                         id="${productoInstance?.institucion}">${productoInstance?.institucion?.encodeAsHTML()}</g:link></span>
+                                                                                         id="${productoInstance?.institucion?.id}">${productoInstance?.institucion?.encodeAsHTML()}</g:link></span>
 
             </li>
         </g:if>
