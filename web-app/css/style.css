@@ -15,7 +15,8 @@ body {
                 }
 
 #body-wrapper {
-                background: url('../images/bg-radial-gradient.gif') fixed 230px top no-repeat;
+                background-color: f7f7f7;
+                /**background: url('../images/bg-radial-gradient.gif') fixed 230px top repeat;*/
                 }                
 
 /********************************      Elements styling      ********************************/
@@ -98,7 +99,7 @@ a.remove-link:hover {
 /********************************      Sidebar      ********************************/
 
 #sidebar {
-                background: url('../images/bg-sidebar.gif') top left no-repeat;
+                background: url('../images/bg-body.gif') top left repeat;
                 width: 230px;
                 height: 100%;
                 position: absolute;

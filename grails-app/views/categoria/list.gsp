@@ -12,9 +12,12 @@
                                                                 default="Skip to content&hellip;"/></a>
 
 
-
 <div>
-    <h1><g:message code="default.list.label" args="[entityName]"/></h1>
+    <div class="content-box-header">
+        <h1><g:message code="default.list.label" args="[entityName]"/></h1>
+        <div class="clear"></div>
+    </div> <!-- End .content-box-header -->
+
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>

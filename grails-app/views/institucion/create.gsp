@@ -8,21 +8,19 @@
 </head>
 
 <body>
-<a href="#create-institucion" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
-                                                                    default="Skip to content&hellip;"/></a>
 
-<div class="nav" role="navigation">
-    <ul>
-        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-        <li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]"/></g:link></li>
-    </ul>
-</div>
 
-<div id="create-institucion" class="content scaffold-create" role="main">
-    <h1><g:message code="default.create.label" args="[entityName]"/></h1>
+    <div class="content-box-header">
+        <div class="clear"></div>
+        <br>
+        <b>Registrar nueva Instituci&oacute;n</b>
+    </div> <!-- End .content-box-header -->
     <g:if test="${flash.message}">
-        <div class="message" role="status">${flash.message}</div>
+        <div class="notification information png_bg" role="status">${flash.message}</div>
     </g:if>
+    <div class="clear"></div>
+
+
     <g:hasErrors bean="${institucionInstance}">
         <ul class="errors" role="alert">
             <g:eachError bean="${institucionInstance}" var="error">
@@ -31,15 +29,18 @@
             </g:eachError>
         </ul>
     </g:hasErrors>
-    <g:form action="save">
-        <fieldset class="form">
-            <g:render template="form"/>
-        </fieldset>
-        <fieldset class="buttons">
-            <g:submitButton name="create" class="save"
-                            value="${message(code: 'default.button.create.label', default: 'Create')}"/>
-        </fieldset>
-    </g:form>
-</div>
+
+    <div class="content-box-content">
+        <g:form action="save">
+            <fieldset class="form">
+                <g:render template="form"/>
+            </fieldset>
+            <fieldset class="buttons">
+                <g:submitButton name="create" class="save"
+                                value="${message(code: 'default.button.create.label', default: 'Create')}"/>
+            </fieldset>
+        </g:form>
+    </div>
+
 </body>
 </html>
